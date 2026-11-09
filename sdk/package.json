@@ -1,0 +1,23 @@
+{
+  "name": "agent-guard-sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK + CLI for the agent-guard NEAR contract (spending limits and policy engine for AI agent wallets)",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22.18" },
+  "bin": { "agent-guard": "src/cli.ts" },
+  "main": "src/index.ts",
+  "scripts": {
+    "cli": "node src/cli.ts",
+    "agent": "node examples/shopping-agent.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --test test/*.test.ts"
+  },
+  "dependencies": {
+    "near-api-js": "7.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
