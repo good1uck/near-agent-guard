@@ -1,0 +1,9 @@
+/target
+node_modules/
+.agent-guard/
+*.key.json
+.env
+submission-payload*.json
+demo/*.mp4
+demo/*.gif
+SUBMISSION_NOTES.md
